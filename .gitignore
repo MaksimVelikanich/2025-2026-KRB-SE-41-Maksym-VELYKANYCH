@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Env files
+.env
+
+# Node
+node_modules/
+frontend/build/
+
+# ML artifacts (важкі файли)
+*.joblib
+*.ubj
+backend/data/raw/creditcard.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

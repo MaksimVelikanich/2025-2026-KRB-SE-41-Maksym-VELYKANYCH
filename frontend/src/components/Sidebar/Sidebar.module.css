@@ -1,0 +1,31 @@
+.sidebar {
+    width: 260px;
+  
+    background-color: #ffffff;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 24px 16px;
+  
+    gap: 12px;
+  
+    border-right: 1px solid rgba(0,0,0,0.08);
+  }
+  
+  .menuItem {
+    border: none;
+    padding: 14px;  
+    border-radius: 12px;
+    background-color: transparent;  
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  .menuItem:hover {
+    background-color: #2500f9;
+    color: #ffffff;
+    transform: translateX(4px);
+  }

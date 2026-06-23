@@ -1,0 +1,183 @@
+.page {
+    min-height: calc(100vh - 64px);
+    background: var(--color-bg);
+    padding: 48px 24px;
+  }
+  
+  .container { max-width: 1000px; margin: 0 auto; }
+  
+  .pageHeader { margin-bottom: 36px; }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 6px;
+  }
+  
+  .subtitle { font-size: 14px; color: var(--color-text-muted); }
+  
+  .loading {
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: 80px;
+    font-size: 14px;
+  }
+  
+  .empty {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 48px;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
+  
+  .table {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  .tableHeader {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.8fr 1.8fr;
+    padding: 14px 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+  
+  .tableRow {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.8fr 1.8fr;
+    padding: 16px 24px;
+    border-top: 1px solid var(--color-border);
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  
+  .tableRow:hover { background: var(--color-surface-hover); }
+  
+  .typeCell { font-size: 13px; color: var(--color-text-main); }
+  .cellFraud { font-size: 13px; color: var(--color-danger); font-weight: 600; }
+  .cellOk { font-size: 13px; color: var(--color-success); font-weight: 600; }
+  .detailCell { font-size: 12px; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+  .dateCell { font-size: 12px; color: var(--color-text-muted); }
+  
+  /* Modal */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 24px;
+  }
+  
+  .modal {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 680px;
+    padding: 32px;
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  
+  .modalTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 4px;
+  }
+  
+  .modalSub { font-size: 12px; color: var(--color-text-muted); }
+  
+  .closeBtn {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-text-muted);
+    font-size: 20px;
+    line-height: 1;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  
+  .closeBtn:hover {
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+  }
+  
+  .modalStats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  
+  .mStat {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .mStatVal {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 4px;
+  }
+  
+  .mStatLabel {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .danger { color: var(--color-danger) !important; }
+  .success { color: var(--color-success) !important; }
+  
+  .charts {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+  }
+  
+  .chartBox {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .chartTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
